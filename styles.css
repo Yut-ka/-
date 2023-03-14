@@ -708,6 +708,12 @@ img.bac2{
     }
 }
 
+@media (max-width:360px){
+    .benefits_question img.woman{
+        height: 100%;
+    }
+}
+
 @media (max-width:340px){
     .benefits_question img.woman{
         height: 90%;
