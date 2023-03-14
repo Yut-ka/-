@@ -694,3 +694,22 @@ img.bac2{
         margin-bottom: 10px;
     }
 }
+
+
+@media (max-width:390px){
+    .benefits_question img.woman{
+        right: -125%;
+    }
+}
+
+@media (max-width:380px){
+    .benefits_question img.woman{
+        height: 105%;
+    }
+}
+
+@media (max-width:340px){
+    .benefits_question img.woman{
+        height: 90%;
+    }
+}
