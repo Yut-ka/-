@@ -676,7 +676,7 @@ img.bac2{
         display: block!important;
         position: absolute;
         height: 100%;
-        width: auto;
+        width: 100%;
         top: -15%;
     }
 
