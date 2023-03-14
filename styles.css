@@ -100,7 +100,7 @@ header .container{
 }
 
 .nav{
-    width: 55%;
+    width: 45%;
     font-size: 1.2rem;
     color: #137199;
 }
@@ -157,6 +157,7 @@ i{
 
 .benefits{
     padding: 80px 0;
+    overflow: hidden;
 }
 
 .benefits_left{
@@ -300,39 +301,19 @@ h2.research-title{
 }
 
 .white-img .lupa{
-    width: 230px;
+    width: 400px;
     height: auto;
     top: 0;
-    right: 0;
+    right: -20%;
     z-index: 2;
 }
 
-.white-img .bac1{
-    width: 100px;
-    height: auto;
-    left: 32%;
-    top: 20%;
-}
-
-.white-img .bac2{
+img.bac2{
+    position: absolute;
     width: 50px;
     height: auto;
-    right: 5%;
-    top: -30%;
-}
-
-.white-img .blue1{
-    width: 200px;
-    height: auto;
-    right: -20%;
-    top: -5%;
-}
-
-.white-img .blue2{
-    width: 60px;
-    height: auto;
-    top: 72%;
-    right: 20%;
+    top: -3%;
+    right: 6%;
 }
 
 .white-block .main-bac{
@@ -419,6 +400,7 @@ h2.research-title{
     width: 80%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 40px;
     margin-bottom: 80px;
 }
@@ -503,4 +485,212 @@ h2.research-title{
     font-weight: 200;
     font-size: 20px;
     margin-bottom: 40px;
+}
+
+
+/* Landscape phones and smaller */
+
+@media (max-width: 480px) {
+    .container{
+        max-width: 90%;
+    }
+
+    body{
+        font-size: 18px;
+    }
+
+    header{
+        display: none;
+    }
+
+    .main_title h1{
+        font-size: revert;
+    }
+
+
+
+
+
+    .benefits{
+        padding: 40px 0;
+    }
+    
+    .benefits_left{
+        width: 95%;
+        margin-bottom: 40px;
+    }
+
+    .benefits_question{
+        padding: 0 20px;
+        width: 100vw;
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+    }
+
+    .benefits_question .left{
+        width: 70%;
+    }
+
+    .benefits_question .left .subtitles{
+        font-size: 12px;
+        width: 75%;
+    }
+
+    .benefits_question img.woman{
+        height: 109%;
+        width: auto;
+        right: -100%;
+    }
+    
+    .benefits_question img.q1, img.q2{
+        display: none;
+    }
+
+    .flex-col{
+        flex-direction: column;
+    }
+
+    .benefits_list .el{
+        margin-bottom: 20px;
+    }
+
+    .benefits_list .el img{
+        width: 60px;
+        margin-bottom: 10px;
+    }
+
+    h3{
+        font-size: 1.8rem;
+        width: 95%;
+    }
+
+
+
+
+
+
+    .research{
+        padding: 40px 0;
+    }
+    
+    .research_list img.p70{
+        width: 92px;
+    }
+
+    .research_list img.book{
+        width: 46px;
+    }
+
+    .research_list .list_el{
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    .white-block{
+        padding: 30px 20px 40px;
+    }
+
+    h2.research-title{
+        font-size: 2.2rem;
+    }
+
+    .white-block h3{
+        font-size: 18px;
+    }
+
+    .white-list{
+        gap: 20px;
+    }
+
+    .white-img{
+        height: 120px
+    }
+
+    img.bac2{
+        width: 35px;
+        top: -2%;
+    }
+
+    .main-bac{
+        display: none;
+    }
+
+    .white-img .lupa{
+        width: 200px;
+        top: 15%;
+        left: 40%;
+    }
+
+    .research .add{
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .research .add img{
+        width: 60px;
+    }
+
+    .main .col-2, .main .col-1{
+        width: 100%;
+    }
+
+    .antibiotic-list .el{
+        align-items: center;
+    }
+
+    .antibiotic-list-2 .el{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .antibiotic-list-2 .el img{
+        width: 140px;
+    }
+
+
+
+    .banner{
+        padding: 30px 20px 40px;
+        border-radius: 30px;
+    }
+
+    .banner h2{
+        font-size: 3.1rem;
+    }
+
+    .banner .sub{
+        font-size: 20px;
+    }
+
+    .banner .wrap-img{
+        height: 220px;
+    }
+
+    .banner img.comp{
+        display: none;
+    }
+
+    .banner img.mobile{
+        display: block!important;
+        position: absolute;
+        height: 100%;
+        width: auto;
+        top: -15%;
+    }
+
+
+
+
+    .sources .text{
+        width: 95%;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+
+    .sources h3{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
 }
