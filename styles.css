@@ -1,0 +1,506 @@
+@font-face {
+    font-family: "TT Commons";
+    src: url("./assets/fonts/TTCommons-Regular.woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "TT Commons";
+    src: url("./assets/fonts/TTCommons-Medium.woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "TT Commons";
+    src: url("./assets/fonts/TTCommons-DemiBold.woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "TT Commons";
+    src: url("./assets/fonts/TTCommons-Light.woff2");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "TT Commons";
+    src: url("./assets/fonts/TTCommons-ExtraBold.woff2");
+    font-weight: 800;
+}
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "TT Commons";
+    font-size: 26px;
+    color: #1D3770;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+:root{
+    --main-blue-color: #269DD2;
+    --main-red-color: #C3293D;
+    --main-wblue-color: #269ED31A;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+
+header{
+    width: 100%;
+    height: 80px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo_up{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--main-blue-color);
+}
+
+.logo_down{
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--main-red-color);
+}
+
+.nav{
+    width: 45%;
+    font-size: 1.2rem;
+    color: #137199;
+}
+
+.header_btn{
+    width: 180px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: var(--main-blue-color);
+    border-radius: 40px;
+}
+
+i{
+    margin-left: 10px;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* TITLE */
+
+.main_title{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-blue-color);
+    color: white;
+}
+
+.main_title h1{
+    font-size: 3.5rem;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main_title span{
+    line-height: .9;
+    display: block;
+}
+
+
+/* BENEFITS */
+
+.benefits{
+    padding: 80px 0;
+}
+
+.benefits_left{
+    width: 55%;
+    margin-bottom: 80px;
+}
+
+.benefits_question{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    background-color: var(--main-red-color);
+    color: white;
+    padding: 0 80px;
+    margin-bottom: 50px;
+}
+
+.benefits_question .left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.benefits_question .left .subtitles{
+    font-weight: 200;
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.benefits_question .right{
+    width: 40%;
+}
+
+.relative{
+    position: relative;
+}
+
+.benefits img.woman{
+    position: absolute;
+    width: 180%;
+    height: auto;
+    bottom: 0;
+    right: -10%;
+}
+
+.benefits img.q1{
+    position: absolute;
+    width: 60px;
+    height: auto;
+    left: -20%;
+    top: 10%;
+}
+
+.benefits img.q2{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    right: 0;
+    top: 25%;
+}
+
+.benefits_list .el{
+    display: flex;
+}
+
+.benefits_list .el img{
+    width: 100px;
+    height: auto;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+/* RESEARCH */
+
+.research{
+    width: 100%;
+    background-color: var(--main-wblue-color);
+    padding: 80px 0;
+}
+
+h3{
+    width: 80%;
+    font-size: 2.5rem;
+}
+
+.research h3{
+    margin-bottom: 40px;
+}
+
+.research_list{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.research_list .list_el{
+    width: 42%;
+    margin-right: 8%;
+    display: flex;
+}
+
+.research_list .list_el img{
+    object-fit: contain;
+    margin-right: 40px;
+}
+
+.research .text{
+    margin-bottom: 80px;
+}
+
+.white-block{
+    background-color: white;
+    padding: 50px 50px 80px;
+    margin-bottom: 40px;
+}
+
+.white-wrap{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+h2.research-title{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.white-title{
+    width: 60%;
+}
+
+.white-img{
+    width: 40%;
+}
+
+.white-img img{
+    position: absolute;
+}
+
+.white-img .lupa{
+    width: 230px;
+    height: auto;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.white-img .bac1{
+    width: 100px;
+    height: auto;
+    left: 32%;
+    top: 20%;
+}
+
+.white-img .bac2{
+    width: 50px;
+    height: auto;
+    right: 5%;
+    top: -30%;
+}
+
+.white-img .blue1{
+    width: 200px;
+    height: auto;
+    right: -20%;
+    top: -5%;
+}
+
+.white-img .blue2{
+    width: 60px;
+    height: auto;
+    top: 72%;
+    right: 20%;
+}
+
+.white-block .main-bac{
+    position: absolute;
+    width: 160px;
+    height: auto;
+    top: 35%;
+    left: -11%;
+}
+
+.white-list{
+    display: flex;
+    gap: 40px;
+}
+
+.white-list .el{
+    display: flex;
+}
+
+.white-list img {
+    width: 30px;
+    height: auto;
+    object-fit: contain;
+    align-self: baseline;
+    margin-right: 10px;
+}
+
+.research .add{
+    display: flex;
+    align-items: center;
+}
+
+.research .add img{
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 30px;
+}
+
+.research .add p{
+    font-weight: 600;
+}
+
+
+
+/* ANTIBIOTICS */
+
+.antibiotic{
+    width: 100%;
+    padding: 80px 0;
+}
+
+.antibiotic h3{
+    margin-bottom: 10px;
+}
+
+.antibiotic .sub{
+    margin-bottom: 40px;
+}
+
+.antibiotic-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.antibiotic-list .el{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.antibiotic-list .el img{
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.col-2{
+    width: 50%;
+}
+
+.antibiotic-list-2{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.antibiotic-list-2 .el{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.antibiotic-list-2 .el img{
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+/* banner */
+
+.banner{
+    width: 100%;
+    padding: 50px 60px 80px;
+    background-color: #F0F9FD;
+    border-radius: 60px;
+}
+
+.banner h2{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.banner .sub{
+    width: 60%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.banner .list{
+    width: 60%;
+}
+
+.banner .el{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.banner img{
+    width: 30px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.banner img.comp{
+    position:absolute;
+    width: 360px;
+    height: auto;
+    top: 5%;
+    right: 5%;
+}
+
+
+/* SOURCES */
+
+.sources .text{
+    color: gray;
+    font-size: 1.3rem;
+}
+
+.sources ol{
+    margin-bottom: 50px;
+}
+
+.sources h3{
+    width: 100%;
+    font-size: 2.2rem;
+}
+
+.sources .sub{
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
